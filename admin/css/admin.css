@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+}
+
+.admin-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: #1e272e;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h2 {
+  margin: 0;
+  font-size: 22px;
+  text-align: center;
+  color: #f1c40f;
+}
+
+.sidebar p {
+  font-size: 14px;
+  text-align: center;
+  margin: 10px 0 20px;
+  color: #bdc3c7;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.sidebar ul li {
+  margin: 6px 0;
+}
+
+.sidebar label,
+.sidebar ul li > a {
+  color: #ecf0f1;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.sidebar label:hover,
+.sidebar ul li > a:hover {
+  background: #34495e;
+  color: #fff;
+}
+
+.sidebar label.active,
+.sidebar ul li > a.active {
+  background: #16a085;
+  color: #fff;
+  font-weight: bold;
+}
+
+.arrow::after {
+  content: "▼";
+  font-size: 12px;
+  transition: transform 0.3s;
+}
+
+.sidebar input[type="checkbox"]:checked + label .arrow::after {
+  transform: rotate(-180deg);
+}
+
+.sidebar input[type="checkbox"] {
+  display: none;
+}
+
+.submenu {
+  display: none;
+  margin-left: 10px;
+  margin-top: 4px;
+}
+
+.sidebar input[type="checkbox"]:checked ~ .submenu {
+  display: block;
+}
+
+.submenu li {
+  display: flex;
+  align-items: center;
+  margin: 4px 0;
+}
+
+.submenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #ecf0f1;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.submenu a {
+  flex: 1;
+  padding: 6px 10px;
+  font-size: 14px;
+  color: #bdc3c7;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.submenu a:hover {
+  background: #2c3e50;
+  color: #fff;
+}
+
+.sidebar label.active-parent {
+  background: #16a085;
+  color: #fff;
+  font-weight: bold;
+}
+
+.submenu a.active-child {
+  background: #2980b9;
+  color: #fff;
+  font-weight: bold;
+  border-left: 4px solid #1abc9c;
+  padding-left: 6px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 25px;
+  overflow-y: auto;
+}
+
+.main-content h1 {
+  margin-top: 0;
+  font-size: 26px;
+  color: #2c3e50;
+}
+
+.sidebar .log_out {
+    margin-top:auto; 
+    padding-top:15px;
+    border-top:1px solid #34495e;
+}
+
+.sidebar .log_out a {
+    display:block;
+    padding:10px;
+    color:#e74c3c;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:4px;
+    transition: background 0.3s;
+}
+.sidebar .log_out a:hover {
+    background:#c0392b;
+    color:#fff;
+}
+
+.admin-info {
+  background: #2c3e50;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+}
+
+.admin-info .avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #f1c40f; 
+  margin-bottom: 10px;
+}
+
+.admin-info .welcome {
+  display: block;
+  font-size: 14px;
+  color: #bdc3c7;
+}
+
+.admin-info .name {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #f1c40f; 
+}

@@ -1,0 +1,84 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f6f8;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #3498db;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+.btn {
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.btn-xacnhan {
+  background-color: #27ae60;
+}
+
+.btn-xacnhan:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(67,160,71,0.4);
+    background: #146937;
+}
+
+.btn-huy {
+  background-color: #e74c3c;
+}
+
+.btn-huy:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(67,160,71,0.4);
+    background: #8d2014;
+}
+
+.btn-trasom {
+  background-color: #f39c12;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.cho_xac_nhan {
+  color: #f39c12;
+}
+
+.da_xac_nhan {
+  color: #27ae60;
+}
+
+.da_huy {
+  color: #e74c3c;
+}
+
+.tra_som {
+  color: #8e44ad;
+}

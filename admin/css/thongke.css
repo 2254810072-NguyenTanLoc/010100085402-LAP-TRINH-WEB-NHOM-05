@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0; padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: #007BFF;
+    color: white;
+    width: 22%;
+    min-width: 150px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 24px;
+    margin: 10px 0 0 0;
+}
+
+.table-bieu-do {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.table-bieu-do th, .table-bieu-do td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.table-bieu-do th {
+    background: #007BFF;
+    color: white;
+}
+
+form {
+    text-align: center;
+    margin: 20px 0;
+}
+
+form label {
+    margin: 0 10px;
+}
+
+form input[type="date"] {
+    padding: 5px;
+}
+
+form button {
+    padding: 5px 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.pie-chart {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.pie-chart .slice {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: conic-gradient(#28a745 calc(var(--p) * 1%), #dc3545 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+}

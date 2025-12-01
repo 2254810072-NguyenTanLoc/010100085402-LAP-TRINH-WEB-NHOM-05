@@ -1,0 +1,131 @@
+.container {
+    width: 95%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.container h2 {
+    font-size: 26px;
+    color: #1976d2;
+    margin-bottom: 20px;
+    border-left: 5px solid #1976d2;
+    padding-left: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 15px;
+    color: #333;
+}
+
+th {
+    background: #f4f6f9;
+    font-weight: 600;
+    color: #1976d2;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+    background: #fafafa;
+}
+
+tr:hover {
+    background: #f1f7ff;
+    transition: background 0.3s ease;
+}
+
+.img-room {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.actions .btn {
+    margin: 0 4px;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #e53935, #b71c1c);
+    color: #fff;
+}
+.btn-danger:hover {
+    box-shadow: 0 4px 12px rgba(229,57,53,0.4);
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #1976d2, #0d47a1);
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-block;
+
+}
+.btn-primary:hover {
+    box-shadow: 0 4px 12px rgba(25,118,210,0.4);
+    transform: translateY(-2px);
+}
+
+.total-box {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2e7d32;
+}
+
+.empty {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+    font-size: 16px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    th, td {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .img-room {
+        width: 100px;
+        height: 70px;
+    }
+    .actions .btn {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+}
