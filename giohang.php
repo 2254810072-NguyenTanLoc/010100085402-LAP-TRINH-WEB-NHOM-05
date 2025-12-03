@@ -34,8 +34,8 @@ $tong = 0;
                     <th>Chọn</th>
                     <th>Ảnh</th>
                     <th>Tên phòng</th>
-                    <th>Ngày đến</th>
-                    <th>Ngày đi</th>
+                    <th>Ngày nhận</th>
+                    <th>Ngày trả</th>
                     <th>Đơn giá / đêm</th>
                     <th>Thành tiền</th>
                     <th>Hành động</th>

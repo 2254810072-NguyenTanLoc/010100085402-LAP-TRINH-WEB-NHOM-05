@@ -63,9 +63,9 @@ if (isset($_POST['them_gio'])) {
         if (!$den || !$di) {
             echo "<script>alert('Định dạng ngày không hợp lệ');</script>";
         } elseif ($den < $today) {
-            echo "<script>alert('Ngày đến không được là ngày trước hôm nay');</script>";
+            echo "<script>alert('Ngày nhận không được là ngày trước hôm nay');</script>";
         } elseif ($di <= $den) {
-            echo "<script>alert('Ngày đi phải lớn hơn ngày đến');</script>";
+            echo "<script>alert('Ngày trả phải lớn hơn ngày đến');</script>";
         } else {
             $ok = $db->themChiTietGioHang($ma_khach_hang, $ma_phong_post, $ngay_den_post, $ngay_di_post);
             if ($ok) {
@@ -129,9 +129,9 @@ $danhgia = $db->getDanhGiaPhong($ma_phong);
                             <?php $today = date('Y-m-d'); ?>
                             <form method="POST" action="" class="add-to-cart-form">
                                 <input type="hidden" name="ma_phong" value="<?= ($phong['ma_phong']) ?>">
-                                <label>Ngày đến:</label>
+                                <label>Ngày nhận:</label>
                                 <input type="date" name="ngay_den" min="<?= $today ?>" required>
-                                <label>Ngày đi:</label>
+                                <label>Ngày trả:</label>
                                 <input type="date" name="ngay_di" min="<?= $today ?>" required>
                                 <button type="submit" name="them_gio" class="btn">Đặt phòng ngay</button>
                             </form>
